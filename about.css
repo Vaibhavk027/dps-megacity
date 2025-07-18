@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.775)50%,rgba(0,0,0,0.775)50%),url(WhatsApp\ Image\ 2025-07-18\ at\ 10.48.58\ AM.jpeg);
+    background-position: center;
+    background-size:cover ;
+    height: 100vh;
+    overflow: hidden;
+}
+.navbar{
+    width: 1550px;
+    height: 80px;
+    margin: auto;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227 , 228, 237 , 0.37);
+    border: 2px solid rgba(255, 255, 255 , 0.18) ;
+
+}
+.icon{
+    width: 200px;
+    margin-top: 20px;
+    float: left;
+    height: 70px;
+}
+
+.icon img{
+    width :200px;
+    margin-top: -20px;
+    margin-left: 50px;
+    
+}
+    
+
+.logo{
+    color: rgb(231, 68, 19);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 7px;
+}
+.menu{
+    width: 600px;
+    float: left;
+    height: 70px;
+    margin-left: 80px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 18px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+ul li a.abt
+{
+    color: rgb(5, 186, 218);
+}
+ul li a:hover{
+    color:rgb(5, 186, 218)  ;
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgb(5, 186, 218);
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.srch::placeholder{
+    opacity: 30%;
+}
+.btn{
+    width: 100px;
+    height: 52px;
+    background: rgb(5, 186, 218);
+    border: 2px solid rgb(5, 186, 218);
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+
+}
+.srch:focus{
+    outline: none;
+}
+
+.title h1
+{
+    position: absolute;
+    transform: translate(75%,-1500%);
+    color: white;
+}
+
+
+.title2 h2{
+    
+    position: absolute;
+    margin-left: 560px;
+    margin-top: -500px;
+    color: white;
+}
+
+.mainTxt h4
+{
+    color: white;
+    position: absolute;
+    transform: translate(30%,-250%);
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    font-size: 20px;
+}
