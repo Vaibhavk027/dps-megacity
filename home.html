@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+  <title>StarScope - Stargazing Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<header>
+  <h1>StarScope</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Join</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Explore the Universe</h2>
+  <p>Join us to experience guided stargazing, learn astrophotography, and witness live celestial events.</p>
+  <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Join Now</button>
+</section>
+
+<h2 class="section-title" id="services">Our Services</h2>
+
+<div class="slider-wrapper">
+  <div class="slider" id="slider">
+    <div class="slide">
+      <img src="https://source.unsplash.com/300x200/?stars" />
+      <div class="slide-content">
+        <h3>Guided Stargazing</h3>
+        <p>Expert-led stargazing sessions in-person and online with real-time navigation tips.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://source.unsplash.com/300x200/?astrophotography" />
+      <div class="slide-content">
+        <h3>Astrophotography</h3>
+        <p>Book personalized night sky shoots with professional photographers.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://source.unsplash.com/300x200/?eclipse" />
+      <div class="slide-content">
+        <h3>Live Celestial Events</h3>
+        <p>Watch lunar eclipses, meteor showers, and planetary transits live.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://source.unsplash.com/300x200/?telescope" />
+      <div class="slide-content">
+        <h3>Workshops & Webinars</h3>
+        <p>Learn telescope skills, navigation, and astronomy concepts from experts.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://source.unsplash.com/300x200/?space" />
+      <div class="slide-content">
+        <h3>Membership Plans</h3>
+        <p>Get discounts, exclusive sessions, and content with monthly or annual plans.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="nav-btns">
+  <button onclick="moveSlider(-1)">←</button>
+  <button onclick="moveSlider(1)">→</button>
+</div>
+
+<section class="about" id="about">
+  <h2>About StarScope</h2>
+  <p>
+    StarScope is your gateway to the stars. From guided virtual tours to astrophotography sessions and interactive celestial streams, we connect space enthusiasts with the wonders of the universe. Learn, explore, and experience astronomy like never before.
+  </p>
+</section>
+
+<section class="cta" id="contact">
+  <h2>Ready to begin your cosmic journey?</h2>
+  <p>Sign up now and unlock your telescope to the stars.</p>
+  <button>Get Started</button>
+</section>
+
+<footer>
+  &copy; 2025 StarScope | Designed for cosmic explorers 🌌
+</footer>
+
+<script>
+  let slider = document.getElementById('slider');
+  let scrollAmount = 320;
+
+  function moveSlider(direction) {
+    slider.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+</body>
+</html>
